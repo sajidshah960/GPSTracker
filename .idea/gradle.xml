@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/xixun_card_settings_1.2.4" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
