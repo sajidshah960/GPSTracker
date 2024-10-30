@@ -31,7 +31,7 @@ class MainActivity : Activity() {
         // Get references to the layout and TextViews from the XML
         linLayout = findViewById(R.id.linLayout)
         resolutionTextView = findViewById(R.id.resolutionTextView)
-        gpsTextView = findViewById(R.id.gpsTextView)
+        gpsTextView = findViewById(R.id.gpsCoordinates)
 
         // Register GPS broadcast receiver
         myReceiver.registerGPSReceiver(this)
@@ -89,7 +89,7 @@ class MainActivity : Activity() {
     private val gpsUpdateRunnable = object : Runnable {
         override fun run() {
             // Update GPS coordinates on the UI
-            gpsTextView.text = "GPS Coordinates: ${myReceiver.gpsCoordinates.first}, ${myReceiver.gpsCoordinates.second}"
+            gpsTextView.text = "${myReceiver.gpsCoordinates.first}, ${myReceiver.gpsCoordinates.second}"
 
             // Re-post this runnable after 1 second
             handler.postDelayed(this, 1000)
