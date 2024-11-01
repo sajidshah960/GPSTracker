@@ -92,7 +92,7 @@ class MainActivity : Activity() {
             gpsTextView.text = "${myReceiver.gpsCoordinates.first}, ${myReceiver.gpsCoordinates.second}"
 
             // Re-post this runnable after 1 second
-            handler.postDelayed(this, 1000)
+            handler.postDelayed(this, 2000)
         }
     }
 

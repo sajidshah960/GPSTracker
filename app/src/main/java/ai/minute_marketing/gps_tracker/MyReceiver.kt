@@ -24,7 +24,7 @@ class MyReceiver : BroadcastReceiver() {
                 val longitude = intent.getDoubleExtra("longitude", 0.0)
                 gpsCoordinates = Pair(latitude, longitude)
                 Log.d("GPS Info", "Latitude: $latitude, Longitude: $longitude")
-                Toast.makeText(context, "GPS Coordinates - Lat: $latitude, Long: $longitude", Toast.LENGTH_LONG).show()
+                //Toast.makeText(context, "GPS Coordinates - Lat: $latitude, Long: $longitude", Toast.LENGTH_LONG).show()
             }
         }
     }
