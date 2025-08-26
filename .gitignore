@@ -17,3 +17,5 @@ local.properties
 .idea/appInsightsSettings.xml
 .idea/gradle.xml
 .idea/runConfigurations.xml
+.idea/appInsightsSettings.xml
+.idea/gradle.xml
